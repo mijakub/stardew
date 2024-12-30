@@ -9,7 +9,27 @@
 </head>
 <body>
     <?php
+        abstract class Man{
 
+        }
+        abstract class Woman{
+            
+        }
+        interface Foraging{
+
+        }
+        interface Mining{
+            
+        }
+        interface Combat{
+            
+        }
+        interface Fishing{
+            
+        }
+        interface Farming{
+            
+        }
     ?>
 </body>
 </html>
