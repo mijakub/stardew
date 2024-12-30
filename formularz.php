@@ -10,5 +10,6 @@
 <body>
     <h1>Stardew Valley</h1>
     <p>działa..?</p>
+    <p>Tak!!</p>
 </body>
 </html>
