@@ -8,8 +8,19 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <h1>Stardew Valley</h1>
-    <p>działa..?</p>
-    <p>Tak!!</p>
+    <div class="container">
+        <h1>Stardew Valley</h1>
+        <div class='main'>
+            <div class="row">
+                <div class="col-5">
+
+                </div>
+                <div class="col-7">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
 </body>
 </html>
