@@ -15,13 +15,54 @@
                 <div class="row">
                     <div class="col-5">
                         <div class="img_character"></div>
-                        <label for="w">w</label>
+                        <label for="w"><img src="women.png"></label>
                         <input type="radio" id="w" name="gender">
-                        <label for="m">m</label>
+                        <label for="m"><img src="men.png"></label>
                         <input type="radio" id="m" name="gender">
+                        <input type="submit" name="b_submit" value="Wyślij" id="b_submit">
                     </div>
                     <div class="col-7">
-                        
+                        <table>
+                            <tr>
+                                <td style="padding-top: 0px;">Imię:</td> <td style="padding-top: 0px;"><input type="text" name="name" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td>Nazwisko:</td> <td><input type="text" name="lastName" id="lastName"></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td colspan="2">Rola:</td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Mining" id="Mining"><label for="Mining">Górnik</label></td><td><input type="checkbox" name="Farming" id="Farming"><label for="Farming">Farmer</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="Combat" id="Combat"><label for="Combat">Wojownik</label></td><td><input type="checkbox" name="Fishing" id="Fishing"><label for="Fishing">Rybak</label></td>
+                            </tr>
+                        </table>
+                        <table>
+                            <tr>
+                                <td colspan="3">Wybierz swoją farmę:</td>
+                            </tr>
+                            <tr>
+                                <td style="padding-bottom: 0px;">
+                                    <div class="farm_div">
+                                        
+                                    </div>
+                                </td>
+                                <td style="padding-bottom: 0px;">
+                                    <div class="farm_div">
+                                        
+                                    </div>
+                                </td>
+                                <td style="padding-bottom: 0px;">
+                                    <div class="farm_div">
+                                        
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                 </div>
             </form>
