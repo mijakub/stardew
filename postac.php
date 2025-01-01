@@ -15,9 +15,6 @@
         abstract class Woman{
             
         }
-        interface Foraging{
-
-        }
         interface Mining{
             
         }
