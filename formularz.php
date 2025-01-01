@@ -11,16 +11,18 @@
     <div class="container">
         <h1>Stardew Valley</h1>
         <div class='main'>
-            <div class="row">
-                <form>
+            <form method="post" action="postac.php">
+                <div class="row">
                     <div class="col-5">
-
+                        <div class="img_character">
+                            
+                        </div>
                     </div>
                     <div class="col-7">
 
                     </div>
-                </form>
-            </div>
+                </div>
+            </form>
         </div>
     </div>
     
