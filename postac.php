@@ -11,10 +11,12 @@
     <?php
         //Klasy abtrakcyjne
         abstract class Man{
-
+            protected $gender = "Man";
+            abstract public function makeHair();
         }
         abstract class Woman{
-            
+            protected $gender = "Woman";
+            abstract public function makeHair();
         }
 
         //Interfejsy
