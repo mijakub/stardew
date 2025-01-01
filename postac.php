@@ -9,12 +9,15 @@
 </head>
 <body>
     <?php
+        //Klasy abtrakcyjne
         abstract class Man{
 
         }
         abstract class Woman{
             
         }
+
+        //Interfejsy
         interface Mining{
             
         }
@@ -26,6 +29,48 @@
         }
         interface Farming{
             
+        }
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+            $name = $_POST['name'];
+            $lastname = $_POST['lastName'];
+            $gender = $_POST['gender'];
+            $farm = $_POST['farm'];
+            $roles = ["Farming", "Mining"];//$_POST['roles'];
+            if($gender == 'm'){
+                if(count($roles) == 1){
+                    
+                }
+                else if(count($roles) == 2){
+                    
+                }
+                else if(count($roles) == 3){
+                    
+                }
+                else if(count($roles) == 4){
+                    //Klasa
+                    class Character extends Man implements Mining, Combat, Fishing, Farming{
+                        
+                    }
+                }
+            }
+            else{
+                if(count($roles) == 1){
+                    
+                }
+                else if(count($roles) == 2){
+                    
+                }
+                else if(count($roles) == 3){
+                    
+                }
+                else if(count($roles) == 4){
+                    //Klasa
+                    class Character extends Woman implements Mining, Combat, Fishing, Farming{ //Dziedziczenie, dziedziczenie z abstrakcji oraz dziedzieczenie z kilku interfejsów
+                        
+                    }
+                }
+            }
+            $character = new Character($name, $lastname, $farm, $roles);
         }
     ?>
 </body>
