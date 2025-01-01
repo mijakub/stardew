@@ -12,12 +12,14 @@
         <h1>Stardew Valley</h1>
         <div class='main'>
             <div class="row">
-                <div class="col-5">
+                <form>
+                    <div class="col-5">
 
-                </div>
-                <div class="col-7">
+                    </div>
+                    <div class="col-7">
 
-                </div>
+                    </div>
+                </form>
             </div>
         </div>
     </div>
