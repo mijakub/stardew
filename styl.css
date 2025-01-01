@@ -1,11 +1,21 @@
 body{
-    background-color: blue;
+    background: linear-gradient(180deg, rgba(2,38,74,1) 0%, rgba(8,124,235,1) 52%, rgba(67,156,164,1) 100%);
+    padding: 20px;
 }
 .row{
-    background-color: brown;
+    background-color: #FFC37B;
+    width: 600px;
+    height: 700px;
+    margin: 0 auto;
+    border: 10px solid #CA6B17;
+    border-radius: 6px;
+    padding: 20px;
+}
+.container{
+    margin-top: 70px;
 }
 .col{
-    background-color: brown;
+
 }
 .img_character{
     border: 1px solid black;

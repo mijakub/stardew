@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styl.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Stardew Valley</h1>
+    <h1>Stardew Valley</h1>
+    <div class="container min-vh">
         <div class='main'>
             <form method="post" action="postac.php">
                 <div class="row">
