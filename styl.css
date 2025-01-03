@@ -38,6 +38,12 @@ h1{
     border-radius: 6px;
     background-image: url("manIcon.png");
 }
+.img_character2{
+    border: 7px solid #CA6B17;
+    width: 100%;
+    height: 300px;
+    border-radius: 6px;
+}
 #b_submit{
     border: 7px solid #CA6B17;
     width: 100%;
