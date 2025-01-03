@@ -39,12 +39,13 @@
         interface Farming{
             
         }
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["roles"])){
             $name = $_POST['name'];
             $lastname = $_POST['lastName'];
             $gender = $_POST['gender'];
             $farm = $_POST['farm'];
             $roles = $_POST['roles'];
+            print_r($roles);
             if(count($roles) == 1){
                 if($roles[0] == "Mining"){
                     //Klasa
