@@ -19,13 +19,13 @@
                             <tr>
                                 <td>
                                     <label for="m" class="radio_label" id="m_label" onclick="man()">
-                                        <input type="radio" id="m" name="gender" checked>
+                                        <input type="radio" id="m" name="gender" value="m" checked>
                                         <img src="man.png">
                                     </label>
                                 </td>
                                 <td style="float: right;">
                                     <label for="w" class="radio_label" id="w_label" onclick="woman()">
-                                        <input type="radio" id="w" name="gender">
+                                        <input type="radio" id="w" name="gender" value="w">
                                         <img src="woman.png">
                                     </label>
                                 </td>
@@ -64,19 +64,19 @@
                             <tr>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f1" class="radio_label">
-                                        <input type="radio" id="f1" name="farm" checked>
+                                        <input type="radio" id="f1" name="farm" value="SpringFarm" checked>
                                         <img src="farm_1.png">
                                     </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f2" class="radio_label">
-                                        <input type="radio" id="f2" name="farm">
+                                        <input type="radio" id="f2" name="farm" value="SummerFarm">
                                         <img src="farm_2.png">
                                     </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f3" class="radio_label">
-                                        <input type="radio" id="f3" name="farm">
+                                        <input type="radio" id="f3" name="farm" value="FallFarm">
                                         <img src="farm_3.png">
                                     </label>
                                 </td>
