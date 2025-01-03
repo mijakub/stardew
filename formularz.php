@@ -18,28 +18,30 @@
                         <table style="margin: 0 auto;">
                             <tr>
                                 <td>
-                                    <label for="w" class="radio_label" id="w_label">
-                                        <input type="radio" id="w" name="gender">
-                                        <img src="women.png">
+                                    <label for="m" class="radio_label" id="m_label" onclick="man()">
+                                        <input type="radio" id="m" name="gender" checked>
+                                        <img src="man.png">
                                     </label>
                                 </td>
                                 <td style="float: right;">
-                                    <label for="m" class="radio_label" id="m_label">
-                                        <input type="radio" id="m" name="gender">
-                                        <img src="men.png">
+                                    <label for="w" class="radio_label" id="w_label" onclick="woman()">
+                                        <input type="radio" id="w" name="gender">
+                                        <img src="woman.png">
                                     </label>
                                 </td>
                             </tr>
                         </table>
-                        <input type="submit" name="b_submit" value="Wyślij" id="b_submit">
+                        <input type="submit" name="b_submit" value="Stwórz postać" id="b_submit">
                     </div>
                     <div class="col-7">
                         <table>
                             <tr>
-                                <td style="padding-top: 0px;">Imię:</td> <td style="padding-top: 0px;"><input type="text" name="name" id="name"></td>
+                                <td style="padding-top: 0px;">Imię:</td> 
+                                <td style="padding-top: 0px;"><input type="text" name="name" id="name" required></td>
                             </tr>
                             <tr>
-                                <td>Nazwisko:</td> <td><input type="text" name="lastName" id="lastName"></td>
+                                <td>Nazwisko:</td> 
+                                <td><input type="text" name="lastName" id="lastName" required></td>
                             </tr>
                         </table>
                         <table>
@@ -47,10 +49,12 @@
                                 <td colspan="2">Rola:</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="Mining" id="Mining"><label for="Mining">Górnik</label></td><td><input type="checkbox" name="Farming" id="Farming"><label for="Farming">Farmer</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Mining"><label for="Mining">Górnik</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Farming"><label for="Farming">Farmer</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="Combat" id="Combat"><label for="Combat">Wojownik</label></td><td><input type="checkbox" name="Fishing" id="Fishing"><label for="Fishing">Rybak</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Combat"><label for="Combat">Wojownik</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Fishing"><label for="Fishing">Rybak</label></td>
                             </tr>
                         </table>
                         <table>
@@ -80,6 +84,14 @@
             </form>
         </div>
     </div>
-    
+    <script>
+        const block = document.querySelector(".img_character");
+        function woman() {   
+            block.style.backgroundImage = "url('womanIcon.png')";
+        }
+        function man() {
+            block.style.backgroundImage = "url('manIcon.png')";
+        }
+    </script>
 </body>
 </html>
