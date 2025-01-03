@@ -67,3 +67,36 @@ input[type=checkbox]{
     height: 110px;
     border-radius: 6px;
 }
+img{
+    width: 80px;
+    height: 80px;
+}
+
+  input[type="radio"] {
+    display: none;
+  }
+
+  img:hover {
+    border-color: #CA6B17;
+    padding: 5px;
+  }
+
+  .radio_label img {
+    display: block;
+    height: auto;
+    border-radius: 8px;
+  }
+
+.radio_label {
+    border: 5px solid transparent;
+    border-radius: 15px;
+    display: inline-block;
+    cursor: pointer;
+    transition: border-color 0.3s;
+}
+
+input[type="radio"]:checked + img {
+    border: 5px solid #CA6B17; 
+    border-radius: 15px;
+    padding: 5px;
+}

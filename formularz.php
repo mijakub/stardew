@@ -15,10 +15,22 @@
                 <div class="row">
                     <div class="col-5">
                         <div class="img_character"></div>
-                        <label for="w"><img src="women.png"></label>
-                        <input type="radio" id="w" name="gender">
-                        <label for="m"><img src="men.png"></label>
-                        <input type="radio" id="m" name="gender">
+                        <table style="margin: 0 auto;">
+                            <tr>
+                                <td>
+                                    <label for="w" class="radio_label" id="w_label">
+                                        <input type="radio" id="w" name="gender">
+                                        <img src="women.png">
+                                    </label>
+                                </td>
+                                <td style="float: right;">
+                                    <label for="m" class="radio_label" id="m_label">
+                                        <input type="radio" id="m" name="gender">
+                                        <img src="men.png">
+                                    </label>
+                                </td>
+                            </tr>
+                        </table>
                         <input type="submit" name="b_submit" value="Wyślij" id="b_submit">
                     </div>
                     <div class="col-7">
