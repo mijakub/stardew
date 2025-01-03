@@ -49,12 +49,12 @@
                                 <td colspan="2">Rola:</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="roles[]" id="Mining"><label for="Mining">Górnik</label></td>
-                                <td><input type="checkbox" name="roles[]" id="Farming"><label for="Farming">Farmer</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Mining" value="Mining"><label for="Mining">Górnik</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Farming" value="Farming"><label for="Farming">Farmer</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="roles[]" id="Combat"><label for="Combat">Wojownik</label></td>
-                                <td><input type="checkbox" name="roles[]" id="Fishing"><label for="Fishing">Rybak</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Combat" value="Combat"><label for="Combat">Wojownik</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Fishing" value="Fishing"><label for="Fishing">Rybak</label></td>
                             </tr>
                         </table>
                         <table>
