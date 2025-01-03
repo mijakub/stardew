@@ -90,10 +90,10 @@
     <script>
         const block = document.querySelector(".img_character");
         function woman() {   
-            block.style.backgroundImage = "url('womanIcon.png')";
+            block.style.backgroundImage = "url('characterWoman.png')";
         }
         function man() {
-            block.style.backgroundImage = "url('manIcon.png')";
+            block.style.backgroundImage = "url('characterMan.png')";
         }
     </script>
 </body>
