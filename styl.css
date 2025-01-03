@@ -78,11 +78,6 @@ img{
     display: none;
   }
 
-  img:hover {
-    border-color: #CA6B17;
-    padding: 5px;
-  }
-
   .radio_label img {
     display: block;
     height: auto;
@@ -90,7 +85,6 @@ img{
   }
 
 .radio_label {
-    border: 5px solid transparent;
     border-radius: 15px;
     display: inline-block;
     cursor: pointer;
@@ -103,52 +97,16 @@ input[type="radio"]:checked + img {
     padding: 5px;
 }
 
-    .checkbox-wrapper-23 *,
-    .checkbox-wrapper-23 *:after,
-    .checkbox-wrapper-23 *:before {
-      box-sizing: border-box;
-    }
-  
-    .checkbox-wrapper-23 input {
-      position: absolute;
-      opacity: 0;
-    }
-      
-    .checkbox-wrapper-23 input:checked + label svg path {
-      stroke-dashoffset: 0;
-    }
-      
-    .checkbox-wrapper-23 input:focus + label {
-      transform: scale(1.03);
-    }
-  
-    .checkbox-wrapper-23 input + label {
-      display: block;
-      border: 2px solid #333;
-      width: var(--size);
-      height: var(--size);
-      border-radius: 6px;
-      cursor: pointer;
-      transition: all .2s ease;
-    }
-      
-    .checkbox-wrapper-23 input + label:active {
-      transform: scale(1.05);
-      border-radius: 12px;
-    }
-      
-    .checkbox-wrapper-23 input + label svg {
-      pointer-events: none;
-      padding: 5%;
-    }
-  
-    .checkbox-wrapper-23 input + label svg path {      
-      fill: none;     
-      stroke: #333;
-      stroke-width: 4px;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      stroke-dasharray: 100;
-      stroke-dashoffset: 101;
-      transition: all 250ms cubic-bezier(1,0,.37,.91);
-    }
+.img_character{
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+}
+@font-face {
+  font-family: 'Stardew Valley';
+  src: url('fonts/StardewValley.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Stardew Valley', sans-serif;
+}

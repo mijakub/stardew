@@ -36,17 +36,17 @@
                     <div class="col-7">
                         <table>
                             <tr>
-                                <td style="padding-top: 0px;">Imię:</td> 
+                                <td style="padding-top: 0px;">Name:</td> 
                                 <td style="padding-top: 0px;"><input type="text" name="name" id="name" required></td>
                             </tr>
                             <tr>
-                                <td>Nazwisko:</td> 
+                                <td>LastName:</td> 
                                 <td><input type="text" name="lastName" id="lastName" required></td>
                             </tr>
                         </table>
                         <table>
                             <tr>
-                                <td colspan="2">Rola:</td>
+                                <td colspan="2">Role:</td>
                             </tr>
                             <tr>
                                 <td><input type="checkbox" name="roles[]" id="Mining" value="Mining"><label for="Mining">Górnik</label></td>
@@ -63,19 +63,22 @@
                             </tr>
                             <tr>
                                 <td style="padding-bottom: 0px;">
-                                    <div class="farm_div">
-                                        
-                                    </div>
+                                    <label for="f1" class="radio_label">
+                                        <input type="radio" id="f1" name="farm" checked>
+                                        <img src="farm_1.png">
+                                    </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
-                                    <div class="farm_div">
-                                        
-                                    </div>
+                                    <label for="f2" class="radio_label">
+                                        <input type="radio" id="f2" name="farm">
+                                        <img src="farm_2.png">
+                                    </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
-                                    <div class="farm_div">
-                                        
-                                    </div>
+                                    <label for="f3" class="radio_label">
+                                        <input type="radio" id="f3" name="farm">
+                                        <img src="farm_3.png">
+                                    </label>
                                 </td>
                             </tr>
                         </table>
