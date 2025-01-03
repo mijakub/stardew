@@ -45,7 +45,6 @@
             $gender = $_POST['gender'];
             $farm = $_POST['farm'];
             $roles = $_POST['roles'];
-            print_r($roles);
             if(count($roles) == 1){
                 if($roles[0] == "Mining"){
                     //Klasa
