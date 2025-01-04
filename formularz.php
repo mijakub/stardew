@@ -64,19 +64,19 @@
                             <tr>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f1" class="radio_label">
-                                        <input type="radio" id="f1" name="farm" value="Spring Farm" checked>
+                                        <input type="radio" id="f1" name="farm" value="SpringFarm" checked>
                                         <img src="farm_1.png">
                                     </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f2" class="radio_label">
-                                        <input type="radio" id="f2" name="farm" value="Summer Farm">
+                                        <input type="radio" id="f2" name="farm" value="SummerFarm">
                                         <img src="farm_2.png">
                                     </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f3" class="radio_label">
-                                        <input type="radio" id="f3" name="farm" value="Fall Farm">
+                                        <input type="radio" id="f3" name="farm" value="FallFarm">
                                         <img src="farm_3.png">
                                     </label>
                                 </td>
