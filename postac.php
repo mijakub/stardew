@@ -33,6 +33,9 @@
                                     public function setGender($gender){
                                         $this->gender = $gender;
                                     }
+                                    public function displayCharacterInfo(){
+                                        return "Name: $this->name $this->lastName<br>Selected Farm: $this->farm<br>Roles: <br>".implode("<br>", $roles);
+                                    }
                                     //metoda abstrakcyjna
                                     abstract public function makePlayerImage();
                                 }
@@ -369,6 +372,7 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
                                     echo $playerCharacter->makePlayerImage();
+                                    echo $playerCharacter->displayCharacterInfo();
                                     $items = [];
                                     if($mining){
                                         $items[] = new MiningItem();
@@ -383,6 +387,9 @@
                                         $items[] = new FarmingItem();
                                     }
                                     
+                                }
+                                else{
+                                    echo "<p>Wybierz profesję</p>";
                                 }
                             ?>
                         </div>
