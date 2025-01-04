@@ -5,6 +5,8 @@ body{
 }
 h1{
     color: white;
+    font-family: 'Stardew Valley Logo', sans-serif;
+    font-size: 80px;
 }
 .row{
     background-color: #FFC37B;
@@ -114,7 +116,10 @@ input[type="radio"]:checked + img {
   font-family: 'Stardew Valley';
   src: url('fonts/StardewValley.ttf') format('truetype');
 }
-
+@font-face {
+    font-family: 'Stardew Valley Logo';
+    src: url('fonts/Stardew-Valley-All-Caps.ttf') format('truetype');
+}
 body {
   font-family: 'Stardew Valley', sans-serif;
 }
