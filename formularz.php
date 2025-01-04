@@ -31,7 +31,7 @@
                                 </td>
                             </tr>
                         </table>
-                        <input type="submit" name="b_submit" value="Stwórz postać" id="b_submit">
+                        <input type="submit" name="b_submit" value="Create" id="b_submit">
                     </div>
                     <div class="col-7">
                         <table>
@@ -46,20 +46,20 @@
                         </table>
                         <table>
                             <tr>
-                                <td colspan="2">Role:</td>
+                                <td colspan="2">Roles:</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="roles[]" id="Mining" value="Mining"><label for="Mining">Górnik</label></td>
-                                <td><input type="checkbox" name="roles[]" id="Farming" value="Farming"><label for="Farming">Farmer</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Mining" value="Mining"><label for="Mining">Mining</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Farming" value="Farming"><label for="Farming">Farming</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="roles[]" id="Combat" value="Combat"><label for="Combat">Wojownik</label></td>
-                                <td><input type="checkbox" name="roles[]" id="Fishing" value="Fishing"><label for="Fishing">Rybak</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Combat" value="Combat"><label for="Combat">Combat</label></td>
+                                <td><input type="checkbox" name="roles[]" id="Fishing" value="Fishing"><label for="Fishing">Fishing</label></td>
                             </tr>
                         </table>
                         <table>
                             <tr>
-                                <td colspan="3">Wybierz swoją farmę:</td>
+                                <td colspan="3">Select your farm:</td>
                             </tr>
                             <tr>
                                 <td style="padding-bottom: 0px;">
