@@ -22,7 +22,7 @@
                                     public function __construct(
                                         protected string $name = "Eric",
                                         protected string $lastName = "Barone",
-                                        protected string $farm = "SpringFarm",
+                                        protected string $farm = "Spring Farm",
                                         protected array $roles = []
                                     ){}
                                     protected string $mining;
@@ -34,7 +34,7 @@
                                         $this->gender = $gender;
                                     }
                                     public function displayCharacterInfo(){
-                                        return "Name: $this->name $this->lastName<br>Selected Farm: $this->farm<br>Roles: <br>".implode("<br>", $roles);
+                                        return "Name: $this->name $this->lastName<br>Selected Farm: $this->farm<br>Roles: <br>*".implode("<br>*", $this->roles);
                                     }
                                     //metoda abstrakcyjna
                                     abstract public function makePlayerImage();
@@ -372,7 +372,6 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
                                     echo $playerCharacter->makePlayerImage();
-                                    echo $playerCharacter->displayCharacterInfo();
                                     $items = [];
                                     if($mining){
                                         $items[] = new MiningItem();
@@ -397,7 +396,9 @@
                         
                     </div>
                     <div class="col-5">
-                        
+                        <?php
+                        echo $playerCharacter->displayCharacterInfo();
+                        ?>
                     </div>
                 </div>
             
