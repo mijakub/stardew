@@ -36,13 +36,15 @@ h1{
     width: 100%;
     height: 300px;
     border-radius: 6px;
-    background-image: url("characterMan.png");
+    background: linear-gradient(180deg, rgba(2,38,74,1) 0%, rgba(8,124,235,1) 52%, rgba(67,156,164,1) 100%);
 }
+
 .img_character2{
-    border: 7px solid #CA6B17;
     width: 100%;
-    height: 300px;
+    height: 100%;
     border-radius: 6px;
+    background-image: url("characterMan.png");
+    background-size: cover;
 }
 #b_submit{
     border: 7px solid #CA6B17;

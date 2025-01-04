@@ -14,7 +14,9 @@
             <form method="post" action="postac.php">
                 <div class="row">
                     <div class="col-5">
-                        <div class="img_character"></div>
+                        <div class="img_character">
+                            <div class="img_character2"></div>
+                        </div>
                         <table style="margin: 0 auto;">
                             <tr>
                                 <td>
@@ -64,19 +66,19 @@
                             <tr>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f1" class="radio_label">
-                                        <input type="radio" id="f1" name="farm" value="SpringFarm" checked>
+                                        <input type="radio" id="f1" name="farm" value="Spring" checked>
                                         <img src="farm_1.png">
                                     </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f2" class="radio_label">
-                                        <input type="radio" id="f2" name="farm" value="SummerFarm">
+                                        <input type="radio" id="f2" name="farm" value="Summer">
                                         <img src="farm_2.png">
                                     </label>
                                 </td>
                                 <td style="padding-bottom: 0px;">
                                     <label for="f3" class="radio_label">
-                                        <input type="radio" id="f3" name="farm" value="FallFarm">
+                                        <input type="radio" id="f3" name="farm" value="Fall">
                                         <img src="farm_3.png">
                                     </label>
                                 </td>
@@ -88,7 +90,7 @@
         </div>
     </div>
     <script>
-        const block = document.querySelector(".img_character");
+        const block = document.querySelector(".img_character2");
         function woman() {   
             block.style.backgroundImage = "url('characterWoman.png')";
         }
