@@ -67,7 +67,6 @@ table, tr{
 }
 table td{
     padding: 10px 0px 10px 0px;
-    border: 1px solid black;
 }
 
 input[type=text]{
@@ -132,13 +131,13 @@ input[type="checkbox"] {
     display: none;
 }
 
-/* Styl dla divów otaczających checkbox */
+/* Styl dla divów otaczających checkbox ------------------------------------------------------------------- */
 .checkbox-container {
-    background-color: #f0f0f0;
-    border: 2px solid #ccc;
+    background-color: #FFC37B;
+    border: 2px solid #CA6B17;
     border-radius: 10px;
     padding: 10px;
-    width: 130px;
+    width: 165px;
     display: flex;
     align-items: center;
     justify-content: left;
@@ -147,33 +146,120 @@ input[type="checkbox"] {
 }
 
 /* Styl dla niezaznaczonego checkboxa (przycisk) */
-.custom-checkbox {
+#Combat2 {
     width: 30px;
     height: 30px;
-    background-image: url("farm_1.png");
+    background-image: url("SwordBlock.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border: 2px solid #ccc;
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
-/* Zmiana koloru div przy zaznaczeniu */
-input[type="checkbox"]:checked + .checkbox-container {
-    background-color: #4caf50; /* Zaznaczony: zielony */
-    transform: scale(1.05); /* Lekko powiększony */
-}
 
-/* Styl checkboxa w zaznaczeniu */
-input[type="checkbox"]:checked + .checkbox-container .custom-checkbox {
-    background-image: url("farm_1.png");
-    border-color: #4caf50;
+/* Zmiana koloru div przy zaznaczeniu */
+input[type="checkbox"]:checked + #Combat3 {
+    background-color: #a387d7; /* Zaznaczony: zielony */
+    transform: scale(1.05); /* Lekko powiększony */
+    border: 2px solid #370066;
 }
 
 /* Opcjonalne: tekst w div */
 .checkbox-container span {
     margin-left: 10px;
-    font-family: Arial, sans-serif;
-    font-size: 16px;
+}
+
+/*--------------------------------------------------------------*/
+
+#Mining2 {
+    width: 30px;
+    height: 30px;
+    background-image: url("pickaxeBlock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Zmiana koloru div przy zaznaczeniu */
+input[type="checkbox"]:checked + #Mining3 {
+    background-color: #a387d7; /* Zaznaczony: zielony */
+    transform: scale(1.05); /* Lekko powiększony */
+    border: 2px solid #370066;
+}
+
+/* Opcjonalne: tekst w div */
+.checkbox-container span {
+    margin-left: 10px;
+}
+
+/*--------------------------------------------------------------*/
+
+#Mining2 {
+    width: 30px;
+    height: 30px;
+    background-image: url("pickaxeBlock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Zmiana koloru div przy zaznaczeniu */
+input[type="checkbox"]:checked + #Mining3 {
+    background-color: #a387d7; /* Zaznaczony: zielony */
+    transform: scale(1.05); /* Lekko powiększony */
+    border: 2px solid #370066;
+}
+
+/* Opcjonalne: tekst w div */
+.checkbox-container span {
+    margin-left: 10px;
+}
+
+/*--------------------------------------------------------------*/
+
+#Mining2 {
+    width: 30px;
+    height: 30px;
+    background-image: url("pickaxeBlock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Zmiana koloru div przy zaznaczeniu */
+input[type="checkbox"]:checked + #Mining3 {
+    background-color: #a387d7; /* Zaznaczony: zielony */
+    transform: scale(1.05); /* Lekko powiększony */
+    border: 2px solid #370066;
+}
+
+/* Opcjonalne: tekst w div */
+.checkbox-container span {
+    margin-left: 10px;
+}
+
+/*----------------------------------------------------------------------------*/
+#pickaxe, #sword, #rod, #can{
+    visibility: hidden;
+    background-color: #FFC37B;
+    outline: 5px solid #CA6B17;
+    border-radius: 3px;
+    padding: 4px;
+    float: left;
+    width: 150px;
+    margin-left: 10px;
+}
+.items{
+    display: flex;
+    margin-bottom: 20px;
 }
