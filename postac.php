@@ -11,10 +11,8 @@
 <body>
 <h1>Stardew Valley</h1>
     <div class="container min-vh">
-        <div class='main'>
-                <div class="row">
-                    <div class="col-7" style="margin: 0;">
-                        <div class="img_character2">
+        <div class="blocks">
+            <div class='main'>
                             <?php
                                 //Klasy abtrakcyjne
                                 abstract class Character{
@@ -371,8 +369,15 @@
                                     }
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
+
+                                    echo "<div class='row'><div class='col-7' style='margin: 0;'><div class='img_character2'>";
+
                                     echo $playerCharacter->makePlayerImage();
+                                    echo "</div></div>";
+                                    echo "<div class='col-5'>";
                                     echo $playerCharacter->displayCharacterInfo();
+                                    echo "</div></div>";
+                                    echo "<div class='weapons'>";
                                     //Polimorfizm
                                     $items = [];
                                     if($mining){
@@ -390,20 +395,13 @@
                                     foreach($items as $item){
                                         echo $item->makeItem();
                                     }
+                                    echo "</div>";
                                 }
                                 else{
                                     echo "<a href='formularz.php'>Create character</a>";
                                 }
                             ?>
-                        </div>
-                        
-                        
-                    </div>
-                    <div class="col-5">
-                        
-                    </div>
-                </div>
-            
+            </div>
         </div>
     </div>
 
