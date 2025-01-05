@@ -34,7 +34,7 @@
                                         $this->gender = $gender;
                                     }
                                     public function displayCharacterInfo(){
-                                        return "Name: $this->name $this->lastName<br>Selected Farm: $this->farm farm<br>Roles: <br>*".implode("<br>*", $this->roles);
+                                        return "Name: $this->name $this->lastName<br>Selected Farm: $this->farm farm<br>Roles: <br>&nbsp;&nbsp;*".implode("<br>&nbsp;&nbsp;*", $this->roles);
                                     }
                                     //metoda abstrakcyjna
                                     abstract public function makePlayerImage();
@@ -76,7 +76,7 @@
                                     }
                                 }
 
-                                if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST["roles"])){
+                                if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['roles'])){
                                     $name = $_POST['name'];
                                     $lastname = $_POST['lastName'];
                                     $gender = $_POST['gender'];
@@ -372,7 +372,7 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
                                     echo $playerCharacter->makePlayerImage();
-
+                                    echo $playerCharacter->displayCharacterInfo();
                                     //Polimorfizm
                                     $items = [];
                                     if($mining){
@@ -392,7 +392,7 @@
                                     }
                                 }
                                 else{
-                                    echo "<p>Wybierz profesję</p>";
+                                    echo "<a href='formularz.php'>Create character</a>";
                                 }
                             ?>
                         </div>
@@ -400,9 +400,7 @@
                         
                     </div>
                     <div class="col-5">
-                        <?php
-                        echo $playerCharacter->displayCharacterInfo();
-                        ?>
+                        
                     </div>
                 </div>
             

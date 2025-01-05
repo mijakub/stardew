@@ -1,10 +1,13 @@
 body{
     /* background: linear-gradient(180deg, rgba(2,38,74,1) 0%, rgba(8,124,235,1) 52%, rgba(67,156,164,1) 100%); */
     background-image: url("background.png");
+    background-size: cover;
     padding: 20px;
 }
 h1{
     color: white;
+    font-family: 'Stardew Valley Logo', sans-serif;
+    font-size: 80px;
 }
 
 .row{
