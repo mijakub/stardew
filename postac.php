@@ -10,9 +10,9 @@
 </head>
 <body>
 <h1>Stardew Valley</h1>
-    <div class="container min-vh">
+    <div class="container">
         <div class="blocks">
-            <div class='main'>
+            <div class='main d-flex flex-row'>
                             <?php
                                 //Klasy abtrakcyjne
                                 abstract class Character{
@@ -55,22 +55,22 @@
                                 //Klasy przedmiotów dla ról - do polimorfizmu
                                 class MiningItem{
                                     public function makeItem(){
-                                        return "<img src='pickaxeBlock.png' alt='pickaxe'>";
+                                        return "<img src='pickaxeBlock.png' alt='pickaxe' class='weaponsImgs'>";
                                     }
                                 }
                                 class CombatItem{
                                     public function makeItem(){
-                                        return "<img src='swordBlock.png' alt='sword'>";
+                                        return "<img src='swordBlock.png' alt='sword' class='weaponsImgs'>";
                                     }
                                 }
                                 class FishingItem{
                                     public function makeItem(){
-                                        return "<img src='rodBlock.png' alt='rod'>";
+                                        return "<img src='rodBlock.png' alt='rod' class='weaponsImgs'>";
                                     }
                                 }
                                 class FarmingItem{
                                     public function makeItem(){
-                                        return "<img src='canBlock.png' alt='can'>";
+                                        return "<img src='canBlock.png' alt='can' class='weaponsImgs'>";
                                     }
                                 }
 
@@ -370,14 +370,14 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
 
-                                    echo "<div class='row'><div class='col-7' style='margin: 0;'><div class='img_character2'>";
+                                    echo "<div class='row' style='margin-right: 0'><div class='col-7' style='margin: 0;'><div class='img_character2'>";
 
                                     echo $playerCharacter->makePlayerImage();
                                     echo "</div></div>";
                                     echo "<div class='col-5'>";
                                     echo $playerCharacter->displayCharacterInfo();
                                     echo "</div></div>";
-                                    echo "<div class='weapons'>";
+                                    echo "<div class='weapons d-flex flex-column' style='width: 20;'>";
                                     //Polimorfizm
                                     $items = [];
                                     if($mining){
