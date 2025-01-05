@@ -4,10 +4,15 @@ body{
     background-size: cover;
     padding: 20px;
 }
+
 h1{
-    color: white;
+    color: #bab5af;
     font-family: 'Stardew Valley Logo', sans-serif;
     font-size: 80px;
+}
+@font-face {
+    font-family: 'Stardew Valley Logo';
+    src: url('fonts/Stardew-Valley-All-Caps.ttf') format('truetype');
 }
 .row{
     background-color: #FFC37B;
@@ -39,7 +44,7 @@ h1{
     width: 100%;
     height: 300px;
     border-radius: 6px;
-    background: linear-gradient(180deg, rgba(2,38,74,1) 0%, rgba(8,124,235,1) 52%, rgba(67,156,164,1) 100%);
+    background-image: url("background2.png");
 }
 
 .img_character2{
@@ -117,10 +122,7 @@ input[type="radio"]:checked + img {
   font-family: 'Stardew Valley';
   src: url('fonts/StardewValley.ttf') format('truetype');
 }
-@font-face {
-    font-family: 'Stardew Valley Logo';
-    src: url('fonts/Stardew-Valley-All-Caps.ttf') format('truetype');
-}
+
 body {
   font-family: 'Stardew Valley', sans-serif;
 }
