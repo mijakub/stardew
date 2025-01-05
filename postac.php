@@ -12,7 +12,7 @@
 <h1>Stardew Valley</h1>
     <div class="container">
         <div class="blocks">
-            <div class='main d-flex flex-row'>
+            <div class='main d-flex'>
                             <?php
                                 //Klasy abtrakcyjne
                                 abstract class Character{
@@ -55,22 +55,22 @@
                                 //Klasy przedmiotów dla ról - do polimorfizmu
                                 class MiningItem{
                                     public function makeItem(){
-                                        return "<img src='pickaxeBlock.png' alt='pickaxe' class='weaponsImgs'>";
+                                        return "<div class='items'><img src='pickaxeBlock.png' alt='pickaxe' class='weaponsImgs' onclick='pickaxe()'><div id='pickaxe'></div></div>";
                                     }
                                 }
                                 class CombatItem{
                                     public function makeItem(){
-                                        return "<img src='swordBlock.png' alt='sword' class='weaponsImgs'>";
+                                        return "<div class='items'><img src='swordBlock.png' alt='sword' class='weaponsImgs' onclick='sword()'><div id='sword'></div></div>";
                                     }
                                 }
                                 class FishingItem{
                                     public function makeItem(){
-                                        return "<img src='rodBlock.png' alt='rod' class='weaponsImgs'>";
+                                        return "<div class='items'><img src='rodBlock.png' alt='rod' class='weaponsImgs' onclick='rod()'><div id='rod'></div></div>";
                                     }
                                 }
                                 class FarmingItem{
                                     public function makeItem(){
-                                        return "<img src='canBlock.png' alt='can' class='weaponsImgs'>";
+                                        return "<div class='items'><img src='canBlock.png' alt='can' class='weaponsImgs' onclick='can()'><div id='can'></div></div>";
                                     }
                                 }
 
@@ -370,7 +370,7 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
 
-                                    echo "<div class='row' style='margin-right: 0'><div class='col-7' style='margin: 0;'><div class='img_character2'>";
+                                    echo "<div class='row'><div class='col-7' style='margin: 0;'><div class='img_character3'>";
 
                                     echo $playerCharacter->makePlayerImage();
                                     echo "</div></div>";
@@ -404,7 +404,48 @@
             </div>
         </div>
     </div>
+    <script>
+        function pickaxe() {
+            let message = "<b>Pickaxe</b><br>Used to break stones";
+            const block = document.getElementById("pickaxe");
+            block.innerHTML = message;
+            block.style.visibility = "visible";
+            setTimeout(() => {
+                block.style.visibility = "hidden";
+            }, 3000);
+        }
 
+        function sword() {
+            let message = "<b>Galaxy Sword</b><br>It's unlike anything you've ever seen.";
+            const block = document.getElementById("sword");
+            block.innerHTML = message;
+            block.style.visibility = "visible";
+            setTimeout(() => {
+                block.style.visibility = "hidden";
+            }, 3000);
+        }
+
+        function rod() {
+            let message = "<b>Fishing Rod</b><br>Use in water to catch fish";
+            const block = document.getElementById("rod");
+            block.innerHTML = message;
+            block.style.visibility = "visible";
+            setTimeout(() => {
+                block.style.visibility = "hidden";
+            }, 3000);
+        }
+
+        function can() {
+            let message = "<b>Watering Can</b><br>Used to water crops";
+            const block = document.getElementById("can");
+            block.innerHTML = message;
+            block.style.visibility = "visible";
+                setTimeout(() => {
+                    block.style.visibility = "hidden";
+            }, 3000);
+        }
+
+    </script>
     
 </body>
 </html>
