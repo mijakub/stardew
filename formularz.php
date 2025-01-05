@@ -25,8 +25,8 @@
                                         <img src="man.png">
                                     </label>
                                 </td>
-                                <td style="float: right;">
-                                    <label for="w" class="radio_label" id="w_label" onclick="woman()">
+                                <td>
+                                    <label for="w" class="radio_label" id="w_label" onclick="woman()" style="float: right;">
                                         <input type="radio" id="w" name="gender" value="w">
                                         <img src="woman.png">
                                     </label>
@@ -51,12 +51,44 @@
                                 <td colspan="2">Roles:</td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="roles[]" id="Mining" value="Mining"><label for="Mining">Mining</label></td>
-                                <td><input type="checkbox" name="roles[]" id="Farming" value="Farming"><label for="Farming">Farming</label></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="roles[]" id="Mining" value="Mining"/>
+                                        <div class="checkbox-container">
+                                            <div class="custom-checkbox"></div>
+                                            <span>Mining</span>
+                                        </div>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label style="float: right;">
+                                        <input type="checkbox" name="roles[]" id="Farming" value="Farming"/>
+                                        <div class="checkbox-container">
+                                            <div class="custom-checkbox"></div>
+                                            <span>Farming</span>
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="roles[]" id="Combat" value="Combat"><label for="Combat">Combat</label></td>
-                                <td><input type="checkbox" name="roles[]" id="Fishing" value="Fishing"><label for="Fishing">Fishing</label></td>
+                                <td>
+                                    <label>
+                                        <input type="checkbox" name="roles[]" id="Combat" value="Combat"/>
+                                        <div class="checkbox-container">
+                                            <div class="custom-checkbox"></div>
+                                            <span>Combat</span>
+                                        </div>
+                                    </label>
+                                </td>
+                                <td>
+                                    <label style="float: right;">
+                                        <input type="checkbox" name="roles[]" id="Fishing" value="Fishing"/>
+                                        <div class="checkbox-container">
+                                            <div class="custom-checkbox"></div>
+                                            <span>Fishing</span>
+                                        </div>
+                                    </label>
+                                </td>
                             </tr>
                         </table>
                         <table>
@@ -64,19 +96,19 @@
                                 <td colspan="3">Select your farm:</td>
                             </tr>
                             <tr>
-                                <td style="padding-bottom: 0px;">
+                                <td style="padding-bottom: 0px; display: flex; flex-direction: row; justify-content: space-between;">
                                     <label for="f1" class="radio_label">
                                         <input type="radio" id="f1" name="farm" value="Spring" checked>
                                         <img src="farm_1.png">
                                     </label>
-                                </td>
-                                <td style="padding-bottom: 0px;">
+                                
+                                
                                     <label for="f2" class="radio_label">
                                         <input type="radio" id="f2" name="farm" value="Summer">
                                         <img src="farm_2.png">
                                     </label>
-                                </td>
-                                <td style="padding-bottom: 0px;">
+                                
+                                
                                     <label for="f3" class="radio_label">
                                         <input type="radio" id="f3" name="farm" value="Fall">
                                         <img src="farm_3.png">

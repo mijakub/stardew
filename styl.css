@@ -67,6 +67,7 @@ table, tr{
 }
 table td{
     padding: 10px 0px 10px 0px;
+    border: 1px solid black;
 }
 
 input[type=text]{
@@ -125,4 +126,54 @@ input[type="radio"]:checked + img {
 
 body {
   font-family: 'Stardew Valley', sans-serif;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+/* Styl dla divów otaczających checkbox */
+.checkbox-container {
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+/* Styl dla niezaznaczonego checkboxa (przycisk) */
+.custom-checkbox {
+    width: 30px;
+    height: 30px;
+    background-image: url("farm_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+/* Zmiana koloru div przy zaznaczeniu */
+input[type="checkbox"]:checked + .checkbox-container {
+    background-color: #4caf50; /* Zaznaczony: zielony */
+    transform: scale(1.05); /* Lekko powiększony */
+}
+
+/* Styl checkboxa w zaznaczeniu */
+input[type="checkbox"]:checked + .checkbox-container .custom-checkbox {
+    background-image: url("farm_1.png");
+    border-color: #4caf50;
+}
+
+/* Opcjonalne: tekst w div */
+.checkbox-container span {
+    margin-left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
 }
