@@ -147,106 +147,57 @@ input[type="checkbox"] {
 
 /* Styl dla niezaznaczonego checkboxa (przycisk) */
 #Combat2 {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-image: url("SwordBlock.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
-
-/* Zmiana koloru div przy zaznaczeniu */
-input[type="checkbox"]:checked + #Combat3 {
-    background-color: #a387d7; /* Zaznaczony: zielony */
-    transform: scale(1.05); /* Lekko powiększony */
-    border: 2px solid #370066;
-}
-
-/* Opcjonalne: tekst w div */
-.checkbox-container span {
-    margin-left: 10px;
-}
-
-/*--------------------------------------------------------------*/
-
 #Mining2 {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     background-image: url("pickaxeBlock.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
-
-/* Zmiana koloru div przy zaznaczeniu */
-input[type="checkbox"]:checked + #Mining3 {
-    background-color: #a387d7; /* Zaznaczony: zielony */
-    transform: scale(1.05); /* Lekko powiększony */
-    border: 2px solid #370066;
-}
-
-/* Opcjonalne: tekst w div */
-.checkbox-container span {
-    margin-left: 10px;
-}
-
-/*--------------------------------------------------------------*/
-
-#Mining2 {
-    width: 30px;
-    height: 30px;
-    background-image: url("pickaxeBlock.png");
+#Fishing2 {
+    width: 40px;
+    height: 40px;
+    background-image: url("rodBlock.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
-
-/* Zmiana koloru div przy zaznaczeniu */
-input[type="checkbox"]:checked + #Mining3 {
-    background-color: #a387d7; /* Zaznaczony: zielony */
-    transform: scale(1.05); /* Lekko powiększony */
-    border: 2px solid #370066;
-}
-
-/* Opcjonalne: tekst w div */
-.checkbox-container span {
-    margin-left: 10px;
-}
-
-/*--------------------------------------------------------------*/
-
-#Mining2 {
-    width: 30px;
-    height: 30px;
-    background-image: url("pickaxeBlock.png");
+#Farming2 {
+    width: 40px;
+    height: 40px;
+    background-image: url("canBlock.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease;
 }
 
-
 /* Zmiana koloru div przy zaznaczeniu */
-input[type="checkbox"]:checked + #Mining3 {
-    background-color: #a387d7; /* Zaznaczony: zielony */
-    transform: scale(1.05); /* Lekko powiększony */
-    border: 2px solid #370066;
+input[type="checkbox"]:checked + .checkbox-container {
+    background-color: #ca6b1745; 
+    transform: scale(1.05);
+    border: 2px solid #CA6B17;
 }
 
 /* Opcjonalne: tekst w div */
 .checkbox-container span {
     margin-left: 10px;
 }
+
 
 /*----------------------------------------------------------------------------*/
 #pickaxe, #sword, #rod, #can{

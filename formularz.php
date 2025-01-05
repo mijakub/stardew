@@ -54,7 +54,7 @@
                                 <td>
                                     <label>
                                         <input type="checkbox" name="roles[]" id="Mining" value="Mining"/>
-                                        <div class="checkbox-container" id="Mining3">
+                                        <div class="checkbox-container">
                                             <div class="custom-checkbox" id="Mining2"></div>
                                             <span>Mining</span>
                                         </div>
@@ -63,7 +63,7 @@
                                 <td>
                                     <label style="float: right;">
                                         <input type="checkbox" name="roles[]" id="Farming" value="Farming"/>
-                                        <div class="checkbox-container" id="Farming3">
+                                        <div class="checkbox-container">
                                             <div class="custom-checkbox" id="Farming2"></div>
                                             <span>Farming</span>
                                         </div>
@@ -74,7 +74,7 @@
                                 <td>
                                     <label>
                                         <input type="checkbox" name="roles[]" id="Combat" value="Combat"/>
-                                        <div class="checkbox-container" id="Combat3">
+                                        <div class="checkbox-container">
                                             <div class="custom-checkbox" id="Combat2"></div>
                                             <span>Combat</span>
                                         </div>
@@ -83,7 +83,7 @@
                                 <td>
                                     <label style="float: right;">
                                         <input type="checkbox" name="roles[]" id="Fishing" value="Fishing"/>
-                                        <div class="checkbox-container" id="Fishing3">
+                                        <div class="checkbox-container">
                                             <div class="custom-checkbox" id="Fishing2"></div>
                                             <span>Fishing</span>
                                         </div>
