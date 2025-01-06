@@ -104,7 +104,7 @@
                                                 }
                                                 public function makePlayerImage(){
                                                     $this->makeSword();
-                                                    return $this->gender == "m" ? "<div class='farm $this->farm'><img src='$this->combat' alt='sword' class='sword'><img src='characterMan.png' alt='Man' class='man'>" : "<div class='farm $this->farm'><img src='$this->combat' alt='sword' class='sword'><img src='characterWoman.png' alt='Woman' class='woman'></div>";
+                                                    return $this->gender == "m" ? "<div class='farm $this->farm'><img src='$this->combat' alt='mining helmet' class='helmet'><img src='characterMan.png' alt='Man' class='man'></div>" : "<div class='farm $this->farm'><img src='$this->combat' alt='mining helmet' class='helmet'><img src='characterWoman.png' alt='Woman' class='woman'></div>";
                                                 }
                                             }
                                             $combat = true;
