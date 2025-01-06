@@ -360,7 +360,7 @@
                                                 $this->makeSword();
                                                 $this->makeRod();
                                                 $this->makeHay();
-                                                return $this->gender == "m" ? "<div class='farm $this->farm'><img src='$this->mining' alt='mining helmet' class='helmet'><img src='$this->combat' alt='sword' class='sword'><img src='$this->fishing' alt='fishing rod' class='rod'><img src='$this->farming' alt='hay' class='hay'><img src='characterMan.png' alt='Man' class='man'></div>" : "<div class='farm' $this->farm'><img src='$this->mining' alt='mining helmet' class='helmet'><img src='$this->combat' alt='sword' class='sword'><img src='$this->fishing' alt='fishing rod' class='rod'><img src='$this->farming' alt='hay' class='hay'><img src='characterWoman.png' alt='Woman' class='woman'></div>";
+                                                return $this->gender == "m" ? "<div class='farm $this->farm'><img src='$this->mining' alt='mining helmet' class='helmet'><img src='$this->combat' alt='sword' class='sword'><img src='$this->fishing' alt='fishing rod' class='rod'><img src='$this->farming' alt='hay' class='hay'><img src='characterMan.png' alt='Man' class='man'></div>" : "<div class='farm $this->farm'><img src='$this->mining' alt='mining helmet' class='helmet'><img src='$this->combat' alt='sword' class='sword'><img src='$this->fishing' alt='fishing rod' class='rod'><img src='$this->farming' alt='hay' class='hay'><img src='characterWoman.png' alt='Woman' class='woman'></div>";
                                             }
                                         }
                                         $mining = true;
