@@ -1,14 +1,12 @@
 body{
-    /* background: linear-gradient(180deg, rgba(2,38,74,1) 0%, rgba(8,124,235,1) 52%, rgba(67,156,164,1) 100%); */
     background-image: url("background.png");
     background-size: cover;
     padding: 20px;
 }
-
 h1{
     color: #bab5af;
     font-family: 'Stardew Valley Logo', sans-serif;
-    font-size: 80px;
+    font-size: 90px;
 }
 @font-face {
     font-family: 'Stardew Valley Logo';
@@ -46,7 +44,6 @@ h1{
     border-radius: 6px;
     background-image: url("background2.png");
 }
-
 .img_character2{
     width: 100%;
     height: 100%;
@@ -68,7 +65,6 @@ table, tr{
 table td{
     padding: 10px 0px 10px 0px;
 }
-
 input[type=text]{
     width: 90%;
     margin-left: 10%;
@@ -89,30 +85,25 @@ img{
     width: 80px;
     height: 80px;
 }
-
   input[type="radio"] {
     display: none;
   }
-
   .radio_label img {
     display: block;
     height: auto;
     border-radius: 8px;
   }
-
 .radio_label {
     border-radius: 15px;
     display: inline-block;
     cursor: pointer;
     transition: border-color 0.3s;
 }
-
 input[type="radio"]:checked + img {
     border: 5px solid #CA6B17; 
     border-radius: 15px;
     padding: 5px;
 }
-
 .img_character{
     background-repeat: no-repeat;
     background-size: cover; 
@@ -122,7 +113,6 @@ input[type="radio"]:checked + img {
   font-family: 'Stardew Valley';
   src: url('fonts/StardewValley.ttf') format('truetype');
 }
-
 body {
   font-family: 'Stardew Valley', sans-serif;
 }
@@ -130,8 +120,6 @@ body {
 input[type="checkbox"] {
     display: none;
 }
-
-/* Styl dla divów otaczających checkbox ------------------------------------------------------------------- */
 .checkbox-container {
     background-color: #FFC37B;
     border: 2px solid #CA6B17;
@@ -144,8 +132,6 @@ input[type="checkbox"] {
     transition: background-color 0.3s ease, transform 0.3s ease;
     cursor: pointer;
 }
-
-/* Styl dla niezaznaczonego checkboxa (przycisk) */
 #Combat2 {
     width: 40px;
     height: 40px;
@@ -155,7 +141,6 @@ input[type="checkbox"] {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-
 #Mining2 {
     width: 40px;
     height: 40px;
@@ -165,7 +150,6 @@ input[type="checkbox"] {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-
 #Fishing2 {
     width: 40px;
     height: 40px;
@@ -175,7 +159,6 @@ input[type="checkbox"] {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-
 #Farming2 {
     width: 40px;
     height: 40px;
@@ -185,21 +168,14 @@ input[type="checkbox"] {
     display: inline-block;
     transition: background-color 0.3s ease;
 }
-
-/* Zmiana koloru div przy zaznaczeniu */
 input[type="checkbox"]:checked + .checkbox-container {
     background-color: #ca6b1745; 
     transform: scale(1.05);
     border: 2px solid #CA6B17;
 }
-
-/* Opcjonalne: tekst w div */
 .checkbox-container span {
     margin-left: 10px;
 }
-
-
-/*----------------------------------------------------------------------------*/
 #pickaxe, #sword, #rod, #can{
     visibility: hidden;
     background-color: #FFC37B;
@@ -227,10 +203,18 @@ input[type="checkbox"]:checked + .checkbox-container {
     border-radius: 6px;
     width: 100%;
     height: 550px;
-    background-image: url("farm_1.png");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+}
+.Spring{
+    background-image: url("background2.png");
+}
+.Summer{
+    background-image: url("background3.png");
+}
+.Fall{
+    background-image: url("background4.png");
 }
 .helmet, .sword, .rod, .hay, .man, .woman{
     position: absolute;
@@ -291,4 +275,20 @@ input[type="checkbox"]:checked + .checkbox-container {
 #row-3{
     width: 750px;
     margin: 0 auto;
+}
+#pickaxe, #sword, #rod, #can{
+    line-height: 95%;
+}
+a{
+    color: black;
+    text-decoration: none;
+    font-size: 30px;
+    vertical-align: middle;
+}
+a:hover{
+    color: rgb(73, 67, 67)
+}
+.svIcon{ 
+    height: 30px;
+    width: 30px;
 }
