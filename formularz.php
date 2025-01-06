@@ -12,8 +12,8 @@
     <div class="container min-vh">
         <div class='main'>
             <form method="post" action="postac.php">
-                <div class="row">
-                    <div class="col-5">
+                <div class="row" id="row-1">
+                    <div class="col-5" id="col-5-1">
                         <div class="img_character">
                             <div class="img_character2"></div>
                         </div>
@@ -35,7 +35,7 @@
                         </table>
                         <input type="submit" name="b_submit" value="Create" id="b_submit">
                     </div>
-                    <div class="col-7">
+                    <div class="col-7" id="col-7-1">
                         <table>
                             <tr>
                                 <td style="padding-top: 0px;">Name:</td> 

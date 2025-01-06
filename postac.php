@@ -11,8 +11,8 @@
 <body>
 <h1>Stardew Valley</h1>
     <div class="container">
-        <div class="blocks">
-            <div class='main d-flex'>
+            <div class='mainn'>
+                <div class="row" id="row-3">
                             <?php
                                 //Klasy abtrakcyjne
                                 abstract class Character{
@@ -55,22 +55,22 @@
                                 //Klasy przedmiotów dla ról - do polimorfizmu
                                 class MiningItem{
                                     public function makeItem(){
-                                        return "<div class='items'><img src='pickaxeBlock.png' alt='pickaxe' class='weaponsImgs' onclick='pickaxe()'><div id='pickaxe'></div></div>";
+                                        return "<img src='pickaxeBlock.png' alt='pickaxe' class='weaponsImgs' onclick='pickaxe()'>";
                                     }
                                 }
                                 class CombatItem{
                                     public function makeItem(){
-                                        return "<div class='items'><img src='swordBlock.png' alt='sword' class='weaponsImgs' onclick='sword()'><div id='sword'></div></div>";
+                                        return "<img src='swordBlock.png' alt='sword' class='weaponsImgs' onclick='sword()'>";
                                     }
                                 }
                                 class FishingItem{
                                     public function makeItem(){
-                                        return "<div class='items'><img src='rodBlock.png' alt='rod' class='weaponsImgs' onclick='rod()'><div id='rod'></div></div>";
+                                        return "<img src='rodBlock.png' alt='rod' class='weaponsImgs' onclick='rod()'>";
                                     }
                                 }
                                 class FarmingItem{
                                     public function makeItem(){
-                                        return "<div class='items'><img src='canBlock.png' alt='can' class='weaponsImgs' onclick='can()'><div id='can'></div></div>";
+                                        return "<img src='canBlock.png' alt='can' class='weaponsImgs' onclick='can()'>";
                                     }
                                 }
 
@@ -370,32 +370,47 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
 
-                                    echo "<div class='row'><div class='col-7' style='margin: 0;'><div class='img_character3'>";
-
-                                    echo $playerCharacter->makePlayerImage();
-                                    echo "</div></div>";
-                                    echo "<div class='col-5'>";
-                                    echo $playerCharacter->displayCharacterInfo();
-                                    echo "</div></div>";
-                                    echo "<div class='weapons d-flex flex-column' style='width: 20;'>";
-                                    //Polimorfizm
-                                    $items = [];
-                                    if($mining){
-                                        $items[] = new MiningItem();
-                                    }
-                                    if($combat){
-                                        $items[] = new CombatItem();
-                                    }
-                                    if($fishing){
-                                        $items[] = new FishingItem();
-                                    }
-                                    if($farming){
-                                        $items[] = new FarmingItem();
-                                    }
-                                    foreach($items as $item){
-                                        echo $item->makeItem();
-                                    }
+                                    echo "  <div class='col-11'><div class='row' id='row-2'>
+                                                <div class='col-7' id='col-7-2' style='margin: 0;'>";
+                                                        echo $playerCharacter->makePlayerImage();
+                                    echo "      </div>";
+                                    echo "      <div class='col-5' id='col-5-2'>";
+                                                    echo $playerCharacter->displayCharacterInfo();
+                                    echo "      </div>
+                                            </div></div>";
+                                    echo "<div class='col-1'><div class='items'>";
+                                        //Polimorfizm
+                                        $items = [];
+                                        if($mining){
+                                            $items[] = new MiningItem();
+                                        }
+                                        if($combat){
+                                            $items[] = new CombatItem();
+                                        }
+                                        if($fishing){
+                                            $items[] = new FishingItem();
+                                        }
+                                        if($farming){
+                                            $items[] = new FarmingItem();
+                                        }
+                                        foreach($items as $item){
+                                            echo $item->makeItem();
+                                        }
                                     echo "</div>";
+                                    echo "<div class='informations'>";
+                                        if($mining){
+                                            echo "<div id='pickaxe'></div>";
+                                        }
+                                        if($combat){
+                                            echo "<div id='sword'></div>";
+                                        }
+                                        if($fishing){
+                                            echo "<div id='rod'></div>";
+                                        }
+                                        if($farming){
+                                            echo "<div id='can'></div>";
+                                        }
+                                    echo "</div></div>";
                                 }
                                 else{
                                     echo "<a href='formularz.php'>Create character</a>";

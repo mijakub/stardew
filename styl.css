@@ -14,7 +14,7 @@ h1{
     font-family: 'Stardew Valley Logo';
     src: url('fonts/Stardew-Valley-All-Caps.ttf') format('truetype');
 }
-.row{
+#row-1{
     background-color: #FFC37B;
     width: 600px;
     margin: 0 auto;
@@ -26,11 +26,11 @@ h1{
     margin-top: 70px;
     margin-bottom: 135px;
 }
-.col-5{
+#col-5-1{
     padding: 0px;
     width: 35%;
 }
-.col-7{
+#col-7-1{
     padding: 0px;
     margin-left: 3%;
     width: 62%;
@@ -203,14 +203,92 @@ input[type="checkbox"]:checked + .checkbox-container {
 #pickaxe, #sword, #rod, #can{
     visibility: hidden;
     background-color: #FFC37B;
-    outline: 5px solid #CA6B17;
-    border-radius: 3px;
+    border: 5px solid #CA6B17;
+    border-radius: 6px;
     padding: 4px;
-    float: left;
     width: 150px;
-    margin-left: 10px;
+    height: 80px;
+    margin-bottom: 15px;
+}
+#col-5-2{
+    padding: 0px;
+    width: 37%;
+    margin-left: 3%;
+}
+#col-7-2{
+    padding: 0px;
+    margin-left: 3%;
+    font-size: 22px;
+    height: 100%;
+    width: 60%;
+}
+.farm{
+    border: 7px solid #CA6B17;
+    border-radius: 6px;
+    width: 100%;
+    height: 550px;
+    background-image: url("farm_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.helmet, .sword, .rod, .hay, .man, .woman{
+    position: absolute;
+    top: 1px;
+    width: 100%;
+    height: 100%;   
+}
+.helmet{
+    z-index: 4;
+}
+.sword, .rod{
+    z-index: 3;
+}
+.hay{
+    z-index: 2;
+}
+.man, .woman{
+    z-index: 1;
+}
+#row-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #FFC37B;
+    width: 600px;
+    margin: 0 auto;
+    border: 10px solid #CA6B17;
+    border-radius: 6px;
+    padding: 15px;
+    float: left;
+}
+.col-1{
+    float: left;
+    display: flex;
+    flex-direction: row;
+    margin-left: 2%;
+}
+.col-11{
+    width: 600px;
 }
 .items{
+    background-color: #FFC37B;
+    padding: 15px;
+    border: 10px solid #CA6B17;
+    border-radius: 6px;
     display: flex;
-    margin-bottom: 20px;
+    flex-direction: column;
+}
+.informations{
+    padding: 25px 15px;
+    border-radius: 6px;
+}
+.weaponsImgs{
+    margin-bottom: 15px;
+    width: 80px;
+    height: 80px;
+}
+#row-3{
+    width: 750px;
+    margin: 0 auto;
 }
