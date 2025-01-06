@@ -7,6 +7,7 @@
     <title>Stardew Valley</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styl.css">
+    <link rel="icon" href="stardewIcon.png">
 </head>
 <body>
 <h1>Stardew Valley</h1>
@@ -32,7 +33,7 @@
                                         $this->gender = $gender;
                                     }
                                     public function displayCharacterInfo(){
-                                        return "Name: $this->name $this->lastName<br>Selected Farm: $this->farm farm<br>Roles: <br>&nbsp;&nbsp;*".implode("<br>&nbsp;&nbsp;*", $this->roles);
+                                        return $this->gender=="m" ? "Name: $this->name $this->lastName<br>Gender: Man<br>Farm: $this->farm farm<br>Roles: <br>&nbsp;&nbsp;*".implode("<br>&nbsp;&nbsp;*", $this->roles) : "Name: $this->name $this->lastName<br>Gender: Woman<br>Farm: $this->farm farm<br>Roles: <br>&nbsp;&nbsp;&gt;".implode("<br>&nbsp;&nbsp;&gt;", $this->roles);
                                     }
                                     //metoda abstrakcyjna
                                     abstract public function makePlayerImage();
@@ -370,15 +371,11 @@
                                     $playerCharacter = new Player($name, $lastname, $farm, $roles);
                                     $playerCharacter->setGender($gender);
 
-                                    echo "  <div class='col-11'><div class='row' id='row-2'>
-                                                <div class='col-7' id='col-7-2' style='margin: 0;'>";
-                                                        echo $playerCharacter->makePlayerImage();
-                                    echo "      </div>";
-                                    echo "      <div class='col-5' id='col-5-2'>";
-                                                    echo $playerCharacter->displayCharacterInfo();
-                                    echo "      </div>
-                                            </div></div>";
-                                    echo "<div class='col-1'><div class='items'>";
+                                    echo "<div class='col-11'><div class='row' id='row-2'><div class='col-7' id='col-7-2' style='margin: 0;'>";
+                                    echo $playerCharacter->makePlayerImage();
+                                    echo "</div><div class='col-5' id='col-5-2' style='font-size: 150%;'>";
+                                    echo $playerCharacter->displayCharacterInfo();
+                                    echo "</div></div></div><div class='col-1'><div class='items'>";
                                         //Polimorfizm
                                         $items = [];
                                         if($mining){
@@ -413,7 +410,7 @@
                                     echo "</div></div>";
                                 }
                                 else{
-                                    echo "<a href='formularz.php'>Create character</a>";
+                                    echo "<div class='col-11 text-center' style='margin: 0 auto;'><div class='row' id='row-2'><div class='col-7' id='col-7-2' style='margin: 0;'><a href='formularz.php'>Create character</a><img src='stardewIcon.png' alt='ikonka stardew' class='svIcon'></div></div></div>";
                                 }
                             ?>
             </div>
